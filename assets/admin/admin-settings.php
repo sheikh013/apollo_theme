@@ -17,8 +17,8 @@ function my_acf_settings_dir($dir) {
 }
 
 /** 3. Hide Panel field group menu item | Hide = '__return_false'  |  Show= '__return_true' */
-add_filter('acf/settings/show_admin', '__return_true');
-//add_filter('acf/settings/show_admin', '__return_false');
+//add_filter('acf/settings/show_admin', '__return_true');
+add_filter('acf/settings/show_admin', '__return_false');
 
 /** 4. Include Panel */
 include_once( get_stylesheet_directory() . '/assets/admin/panel/acf.php' );
@@ -49,22 +49,22 @@ if (function_exists('acf_add_options_page')) {
 *
 */
 
-/* LOADING STYLE AND JS : BACKEND     */
-function skh_admin_init_builder(){
-    add_action('admin_enqueue_scripts', 'skh_builder_scripts');
-    function skh_builder_scripts(){
-        wp_enqueue_style('skh_builder_css', get_template_directory_uri() . '/assets/admin/css/skh-admin-css.css' );
-        wp_enqueue_script('skh_builder_js', get_template_directory_uri() . '/assets/admin/js/skh-admin-js.js', array('jquery'), '', true);
-    }
+// /* LOADING STYLE AND JS : BACKEND     */
+// function skh_admin_init_builder(){
+//     add_action('admin_enqueue_scripts', 'skh_builder_scripts');
+//     function skh_builder_scripts(){
+//         wp_enqueue_style('skh_builder_css', get_template_directory_uri() . '/assets/admin/css/skh-admin-css.css' );
+//         wp_enqueue_script('skh_builder_js', get_template_directory_uri() . '/assets/admin/js/skh-admin-js.js', array('jquery'), '', true);
+//     }
 
-}
-add_action('admin_init', 'skh_admin_init_builder');
-
-
+// }
+// add_action('admin_init', 'skh_admin_init_builder');
 
 
-/* LOADING STYLE AND JS : FRONTEND IF NECESSARY     */
-function sk_builder_front_end(){
-    //wp_enqueue_style('sk_builder_front_css', get_template_directory_uri() . '/assets/css/vendor/sk-builder-front-end.css' );
-}
-add_action('wp_enqueue_scripts', 'sk_builder_front_end', 99);
+
+
+// /* LOADING STYLE AND JS : FRONTEND IF NECESSARY     */
+// function sk_builder_front_end(){
+//     wp_enqueue_style('sk_builder_front_css', get_template_directory_uri() . '/assets/css/vendor/sk-builder-front-end.css' );
+// }
+// add_action('wp_enqueue_scripts', 'sk_builder_front_end', 99);

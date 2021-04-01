@@ -104,11 +104,13 @@
 
 
       $(".toggleTopMenu-mobile").click(function() {
-
         $('.mobile-menu__list').toggleClass("open-menu");
         $('.overlay').toggleClass("open-menu");
+      });
 
-
+      $(".overlay").click(function() {
+        $('.mobile-menu__list').toggleClass("open-menu");
+        $('.overlay').toggleClass("open-menu");
       });
 
     });

@@ -49,6 +49,7 @@ apollo_solution Theme  is distributed under the terms of the GNU GPL v2 or later
 /*
     Link hover and active stage
 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -344,6 +345,7 @@ input[type="submit"] {
 
 #skh-version__2 {
   position: relative;
+  font-family: 'Poppins', sans-serif;
   /* Menu Container */
   /* Menu Item List Elements */
 }
@@ -756,6 +758,12 @@ aside .widget_search input {
 }
 aside .widget_search .search-submit {
   display: none;
+}
+
+.et-db #et-boc .et-l .et_pb_with_background .et_pb_row,
+.et-db #et-boc .et-l .single.et_full_width_page .et_pb_row,
+.et-db #et-boc .et-l .single.et_full_width_portfolio_page .et_pb_row {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

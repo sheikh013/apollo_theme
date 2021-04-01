@@ -4,6 +4,7 @@ $menu-wrapper-bg: #fff;
 #skh-version__2 {
   position: relative;
   @extend .clearfix;
+  font-family: 'Poppins', sans-serif;
   /* Menu Container */
   .menu {
     @include normal() {

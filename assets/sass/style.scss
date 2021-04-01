@@ -16,7 +16,7 @@ apollo_solution Theme  is distributed under the terms of the GNU GPL v2 or later
 
 
 */
-@import 'compass';
+@import "compass";
 @import "components/variables";
 
 @import "components/mixins";
@@ -39,4 +39,8 @@ apollo_solution Theme  is distributed under the terms of the GNU GPL v2 or later
 
 @import "components/aside";
 
-
+.et-db #et-boc .et-l .et_pb_with_background .et_pb_row,
+.et-db #et-boc .et-l .single.et_full_width_page .et_pb_row,
+.et-db #et-boc .et-l .single.et_full_width_portfolio_page .et_pb_row {
+  width: 100%;
+}
